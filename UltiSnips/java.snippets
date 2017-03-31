@@ -1,0 +1,83 @@
+###########################################################################
+#                            TextMate Snippets                            #
+###########################################################################
+
+priority 0
+
+snippet fh "file header" b
+/**
+ * File: `!p snip.rv = snip.fn`
+ * Author: `!v $AUTHOR`
+ * Time: `!v strftime('%c')`
+ * Purpose: ${1:purpose...}
+ */
+endsnippet
+
+snippet cls "file class" b
+public class $1 {
+}
+endsnippet
+
+snippet if "if () {}" b
+if (${1:/*condition*/}) {
+	${2://TODO}
+}
+endsnippet
+
+snippet ifelse "if () {} else {}" b
+if (${1:/*condition*/}) {
+	$2
+} else {
+	$3
+}
+endsnippet
+
+snippet cldm "class doc comment" b
+/**
+ * ${1:purpose...}
+ * @author `!v $AUTHOR`
+ * @version 1.0
+ */
+endsnippet
+
+snippet cnds "constructor doc comment single line" b
+/** ${1:Constructor} */
+endsnippet
+
+snippet cndm "constructor doc comment multi line" b
+/**
+ * Constructor.
+ * @param ${1:param} 
+ */
+endsnippet
+
+snippet mhds "method doc comment single line" b
+/** ${1:Method} */
+endsnippet
+
+snippet mhdm "method doc comment" b
+/**
+ * ${1:Method}
+ * @param ${2:param}
+ * @return ${3:return}
+ */
+endsnippet
+
+snippet edds "end doc comment" b
+///:~
+endsnippet 
+
+snippet todo "//TODO" b
+//TODO: ${1:description...}
+endsnippet
+
+snippet while "while loop" b
+while(${1:/*condition*/}) {
+	$2	
+}
+endsnippet
+
+snippet put "system.out.println" b
+System.out.println($1);
+endsnippet
+
