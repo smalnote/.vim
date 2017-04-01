@@ -1,5 +1,6 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 " To disable a plugin, add it's bundle name to the following listlet
-let g:pathogen_disabled = [ 'vim-go' ]
+let g:pathogen_disabled = [ ]
 execute pathogen#infect()
 
 if has('gui_running')
