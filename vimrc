@@ -4,7 +4,7 @@ let g:pathogen_disabled = [ ]
 execute pathogen#infect()
 
 if has('gui_running')
-    set background=dark
+    set background=light
     colorscheme solarized
 "   set guifont=YaHei\ Consolas\ Hybrid\ 12
     set guifont=Monospace\ Regular\ 12
@@ -22,7 +22,7 @@ filetype plugin indent on
 
 " show status bar
 set laststatus=2
-let g:Powerline_colorscheme='solarized256'
+let g:Powerline_colorscheme='solarized'
 
 " show cursor current position
 set ruler
