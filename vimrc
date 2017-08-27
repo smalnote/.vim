@@ -8,7 +8,7 @@ if has('gui_running')
     colorscheme solarized
 "   set guifont=YaHei\ Consolas\ Hybrid\ 12
     set guifont=Monospace\ Regular\ 12
-    set lines=43 columns=132
+    set lines=50 columns=152
     " highlight current column
     set cursorcolumn
 else
@@ -88,7 +88,7 @@ let NERDTreeWinPos="left"
 " Hide help info
 let NERDTreeMinimalUI=1
 
-" Detet buf when delete file
+" Delete buf when delete file
 let NERDTreeAutoDeleteBuffer=1
 
 " define hotkey prefix <leader>
@@ -174,6 +174,9 @@ let g:indent_guides_color_change_percent = 3
 set fileencodings=utf-8,ascii,gbk,gb2312,gb18030,cp936
 set termencoding=utf-8
 set encoding=utf-8
+
+" taglist setting
+let Tlist_Use_Right_Window = 1
 
 " git clone https://github.com/scrooloose/nerdtree.git
 " git clone https://github.com/altercation/vim-colors-solarized.git
