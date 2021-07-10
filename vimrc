@@ -1,6 +1,6 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 " To disable a plugin, add it's bundle name to the following listlet
-let g:pathogen_disabled = [ ]
+let g:pathogen_disabled = ['YouCompleteMe']
 execute pathogen#infect()
 
 if has('gui_running')
@@ -13,8 +13,8 @@ if has('gui_running')
     set cursorcolumn
 else
     set cursorcolumn
-    set lines=43 columns=120
-    colorscheme slate
+    " set lines=43 columns=120
+    " colorscheme solarized
 endif
 
 syntax on
